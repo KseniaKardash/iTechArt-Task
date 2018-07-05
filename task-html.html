@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>template</title>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: auto;
+    }
+.fontTitle{
+  font-family: 'Fjalla One', sans-serif;
+  color: #e6e6e6;
+}
+    header {
+      background-color: #272b2c;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    header .mainMenu a {
+      text-decoration: none;
+      color: #e6e6e6;
+      padding: 32px 21px;
+    }
+
+    .siteName {
+      margin: 0px 373px;
+      font-size: 18pt;
+    }
+
+    .mainMenu {
+      margin-left: 276px;
+      font-size: 10pt;
+    }
+
+    header .mainMenu a:first-child {
+      height: 100%;
+      background-color: #ca4d40;
+    }
+    .bannerBackground{
+      height: 560px;
+      background-color: white;
+      position: relative;
+    }
+#semicircle-left{
+  position: absolute;
+  bottom: 200px;
+  left: 370px;
+}
+#semicircle-right{
+  position: absolute;
+  bottom: 200px;
+  left: 405px;
+}
+#bannerLine{
+  position: absolute;
+  bottom: 158px;
+  left: 575px;
+}
+.bannerText{
+  font-size: 24pt;
+  letter-spacing: 2px;
+  line-height: 46px;
+  position: absolute;
+  bottom: 55px;
+  left: 370px;
+  font-size: 23pt;
+letter-spacing: 2.7px;
+}
+.webSiteLink{
+  font-size: 11pt;
+  position: absolute;
+  bottom: 59px;
+  left: 371px;
+  color: #ca4d40;
+  text-decoration: none;
+  letter-spacing: 1.4px;
+}
+  </style>
+</head>
+
+<body>
+  <header class="flex-container fontTitle">
+    <div class="siteName" class="flex-item">SITE NAME</div>
+    <div class="mainMenu" class="flex-item">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">SERVICES</a>
+      <a href="#">PORTFOLIO</a>
+      <a href="#">CONTACT</a>
+    </div>
+  </header>
+<div class="bannerBackground">
+    <img src='banner.png' alt="альтернативный текст">
+    <img src='semicircle-left.png' alt="semicircle" id="semicircle-left">
+    <img src='semicircle-right.png' alt="semicircle" id="semicircle-right">
+    <p class="bannerText fontTitle" >CLIVUAM TINC </br>
+    NUNC DIGNISSIM RISUS ID METUS</p>
+    <img src='banner-line.png' alt="line" id="bannerLine">
+    <a href="#" class="webSiteLink fontTitle">http://wallpaperswide.com/</a>
+</div>
+</body>
+
+</html>
