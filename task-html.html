@@ -5,105 +5,100 @@
   <meta charset="utf-8">
   <title>template</title>
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: auto;
-    }
-.fontTitle{
-  font-family: 'Fjalla One', sans-serif;
-  color: #e6e6e6;
-}
-    header {
-      background-color: #272b2c;
-      height: 80px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-    }
 
-    header .mainMenu a {
-      text-decoration: none;
-      color: #e6e6e6;
-      padding: 32px 21px;
-    }
-
-    .siteName {
-      margin: 0px 373px;
-      font-size: 18pt;
-    }
-
-    .mainMenu {
-      margin-left: 276px;
-      font-size: 10pt;
-    }
-
-    header .mainMenu a:first-child {
-      height: 100%;
-      background-color: #ca4d40;
-    }
-    .bannerBackground{
-      height: 560px;
-      background-color: white;
-      position: relative;
-    }
-#semicircle-left{
-  position: absolute;
-  bottom: 200px;
-  left: 370px;
-}
-#semicircle-right{
-  position: absolute;
-  bottom: 200px;
-  left: 405px;
-}
-#bannerLine{
-  position: absolute;
-  bottom: 158px;
-  left: 575px;
-}
-.bannerText{
-  font-size: 24pt;
-  letter-spacing: 2px;
-  line-height: 46px;
-  position: absolute;
-  bottom: 55px;
-  left: 370px;
-  font-size: 23pt;
-letter-spacing: 2.7px;
-}
-.webSiteLink{
-  font-size: 11pt;
-  position: absolute;
-  bottom: 59px;
-  left: 371px;
-  color: #ca4d40;
-  text-decoration: none;
-  letter-spacing: 1.4px;
-}
-  </style>
 </head>
 
 <body>
-  <header class="flex-container fontTitle">
-    <div class="siteName" class="flex-item">SITE NAME</div>
-    <div class="mainMenu" class="flex-item">
-      <a href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">SERVICES</a>
-      <a href="#">PORTFOLIO</a>
-      <a href="#">CONTACT</a>
+  <header class="flex-container">
+    <div class="header__logo">
+      <p>SITE NAME</p>
     </div>
+    <nav class="header__nav">
+      <a href="">HOME</a>
+      <a href="">ABOUT</a>
+      <a href="">SERVICES</a>
+      <a href="">PORTFOLIO</a>
+      <a href="">CONTACT</a>
+    </nav>
   </header>
-<div class="bannerBackground">
-    <img src='banner.png' alt="альтернативный текст">
-    <img src='semicircle-left.png' alt="semicircle" id="semicircle-left">
-    <img src='semicircle-right.png' alt="semicircle" id="semicircle-right">
-    <p class="bannerText fontTitle" >CLIVUAM TINC </br>
-    NUNC DIGNISSIM RISUS ID METUS</p>
-    <img src='banner-line.png' alt="line" id="bannerLine">
-    <a href="#" class="webSiteLink fontTitle">http://wallpaperswide.com/</a>
+  <main>
+    <div class="banner">
+      <img src='img/banner.png' alt="banner" class="banner_img">
+      <img src='img/semicircle-left.png' alt="semicircle" id="banner__semicircle__left">
+      <img src='img/semicircle-right.png' alt="semicircle" id="banner__semicircle__right">
+      <p id="banner__text">CLIVUAM TINC </br>
+        NUNC DIGNISSIM RISUS ID METUS</p>
+      <img src='img/banner-line.png' alt="line" id="banner__line">
+      <a href="#" id="banner__link">http://wallpaperswide.com/</a>
+    </div>
+    <div class="advantages">
+      <div class="advantages__container">
+        <section class="advantages__item">
+          <img src='img/advantages__item__icon__bg.png' class="advantages__item__icon" alt="icon">
+          <div class="advantages__item__text">
+            <h3>ALIQUAM TINCIDUNT</h3>
+            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</br> Aenean dignissim pellentesq <a href="">=> more</a></p>
+          </div>
+        </section>
+        <section class="advantages__item">
+          <img src='img/advantages__item__icon__bg.png' class="advantages__item__icon" alt="icon">
+          <div class="advantages__item__text">
+            <h3>CRAS ORNARE TRISTIQU</h3>
+            <p>Jonec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</br> Aenean dignissim pellentesq <a href="">=> more</a></p>
+          </div>
+        </section>
+        <section class="advantages__item">
+          <img src='img/advantages__item__icon__bg.png' class="advantages__item__icon" alt="icon">
+          <div class="advantages__item__text">
+            <h3>VIVAMUS VESTIBULUM</h3>
+            <p>Conec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </br>Aenean dignissim pellentesq <a href="">=> more</a></p>
+          </div>
+        </section>
+      </div>
+    </div>
+<div class="content">
+  <div class="content__container">
+    <article class="content__info">
+      <h1>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+sit amet orci. Aenean dignissim pellentesque felis</h1>
+      <h2>Civamus vestibulum nulla nec ante</h2>
+       <section>
+        <h3>Sed egestas anteet </h3>
+        <p>Eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
+          ornare nisl. </p>
+        <button>MORE</button>
+      </section>
+      <section>
+        <h3>Aenean egestas anteet</h3>
+        <p>Lorem pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
+          ornare nisl. </p>
+        <button>MORE</button>
+      </section>
+    </article>
+    <article class="content__img">
+      <img src='img/content__bird.png' alt="bird">
+    </article>
+  </div>
 </div>
+<div class="subscribe">
+  <article class="subscribe__testimonial">
+    <img src='img/subscribe__testimonial__bg.png' alt="person">
+    <div class="subscribe__info__text">
+        <h3>Donec nec justo eget</h3>
+        <p>“ Ede semper est, vitae luctus metus libero eu augue. Morb sipo ipiscing, commodo quis, gravida ...”<em> - Kohn Doe/company name</em></p>
+      </div>
+  </article>
+  <article class="subscribe__email">
+    <h3>Morbi vitae luctus</h3>
+    <input type="email" class="placeholder" placeholder="enter your email id here..." / >
+    <button>SUNSCRIBE</button>
+  </article>
+</div>
+  </main>
+
 </body>
 
 </html>
