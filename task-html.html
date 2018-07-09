@@ -8,97 +8,173 @@
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
-  <header class="flex-container">
-    <div class="header__logo">
-      <p>SITE NAME</p>
+  <header>
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="">SITE NAME</a>
+      </div>
+      <nav class="header__nav">
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">SERVICES</a>
+        <a href="">PORTFOLIO</a>
+        <a href="">CONTACT</a>
+      </nav>
+      <img src='img/hamburger__icon.png' alt="menu" class="hamburger__icon">
     </div>
-    <nav class="header__nav">
-      <a href="">HOME</a>
-      <a href="">ABOUT</a>
-      <a href="">SERVICES</a>
-      <a href="">PORTFOLIO</a>
-      <a href="">CONTACT</a>
-    </nav>
   </header>
   <main>
-    <div class="banner">
-      <img src='img/banner.png' alt="banner" class="banner_img">
-      <img src='img/semicircle-left.png' alt="semicircle" id="banner__semicircle__left">
-      <img src='img/semicircle-right.png' alt="semicircle" id="banner__semicircle__right">
-      <p id="banner__text">CLIVUAM TINC </br>
-        NUNC DIGNISSIM RISUS ID METUS</p>
-      <img src='img/banner-line.png' alt="line" id="banner__line">
-      <a href="#" id="banner__link">http://wallpaperswide.com/</a>
+<section class="banner">
+  <div class="banner__flex">
+    <div class="banner__container">
+        <div>
+          <img src='img/semicircle-left.png' alt="semicircle" class="banner__semicircle__left">
+          <img src='img/semicircle-right.png' alt="semicircle" class="banner__semicircle__right">
+        </div>
+        <div class="text__line">
+          <p class="banner__text" >CLIVUAM TINC </p>
+          <img src='img/banner-line.png' alt="line" class="banner__line">
+          <!-- <div class="white_line">
+          </div> -->
+        </div>
+        <p class="banner__text"> NUNC DIGNISSIM RISUS ID METUS </p>
+        <a href="#" class="banner__link">http://wallpaperswide.com/</a>
     </div>
-    <div class="advantages">
+  </div>
+</section>
+    <section class="advantages">
       <div class="advantages__container">
-        <section class="advantages__item">
-          <img src='img/advantages__item__icon__bg.png' class="advantages__item__icon" alt="icon">
+        <article class="advantages__item">
+          <img src='img/advantages__item__icon__rocket.png' class="advantages__item__icon" alt="icon">
           <div class="advantages__item__text">
             <h3>ALIQUAM TINCIDUNT</h3>
-            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</br> Aenean dignissim pellentesq <a href="">=> more</a></p>
+            <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.<br> Aenean dignissim pellentesq <a href="">=> more</a></p>
           </div>
-        </section>
-        <section class="advantages__item">
-          <img src='img/advantages__item__icon__bg.png' class="advantages__item__icon" alt="icon">
+        </article>
+        <article class="advantages__item">
+          <img src='img/advantages__item__icon__shield.png' class="advantages__item__icon" alt="icon">
           <div class="advantages__item__text">
             <h3>CRAS ORNARE TRISTIQU</h3>
-            <p>Jonec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</br> Aenean dignissim pellentesq <a href="">=> more</a></p>
+            <p>Jonec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.<br> Aenean dignissim pellentesq <a href="">=> more</a></p>
           </div>
-        </section>
-        <section class="advantages__item">
-          <img src='img/advantages__item__icon__bg.png' class="advantages__item__icon" alt="icon">
+        </article>
+        <article class="advantages__item">
+          <img src='img/advantages__item__icon__fire-extinguisher.png' class="advantages__item__icon" alt="icon">
           <div class="advantages__item__text">
             <h3>VIVAMUS VESTIBULUM</h3>
-            <p>Conec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </br>Aenean dignissim pellentesq <a href="">=> more</a></p>
+            <p>Conec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. <br>Aenean dignissim pellentesq <a href="">=> more</a></p>
           </div>
-        </section>
+        </article>
       </div>
-    </div>
-<div class="content">
-  <div class="content__container">
-    <article class="content__info">
-      <h1>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+    </section>
+    <section class="content">
+      <div class="content__container">
+        <div class="content__info">
+          <h1>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
 sit amet orci. Aenean dignissim pellentesque felis</h1>
-      <h2>Civamus vestibulum nulla nec ante</h2>
-       <section>
-        <h3>Sed egestas anteet </h3>
-        <p>Eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
-          ornare nisl. </p>
-        <button>MORE</button>
-      </section>
-      <section>
-        <h3>Aenean egestas anteet</h3>
-        <p>Lorem pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
-          ornare nisl. </p>
-        <button>MORE</button>
-      </section>
-    </article>
-    <article class="content__img">
-      <img src='img/content__bird.png' alt="bird">
-    </article>
-  </div>
-</div>
-<div class="subscribe">
-  <article class="subscribe__testimonial">
-    <img src='img/subscribe__testimonial__bg.png' alt="person">
-    <div class="subscribe__info__text">
-        <h3>Donec nec justo eget</h3>
-        <p>“ Ede semper est, vitae luctus metus libero eu augue. Morb sipo ipiscing, commodo quis, gravida ...”<em> - Kohn Doe/company name</em></p>
+          <h2>Civamus vestibulum nulla nec ante</h2>
+          <section>
+            <article>
+              <h3>Sed egestas anteet </h3>
+              <p>Eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc
+                sapien ornare nisl. </p>
+              <button>MORE</button>
+            </article>
+            <article>
+              <h3>Aenean egestas anteet</h3>
+              <p>Lorem pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc
+                sapien ornare nisl. </p>
+              <button>MORE</button>
+            </article>
+          </section>
+        </div>
+        <div class="content__img">
+          <img src='img/content__bird.png' alt="bird">
+        </div>
       </div>
-  </article>
-  <article class="subscribe__email">
-    <h3>Morbi vitae luctus</h3>
-    <input type="email" class="placeholder" placeholder="enter your email id here..." / >
-    <button>SUNSCRIBE</button>
-  </article>
-</div>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe__testimonial">
+        <img src='img/subscribe__testimonial__person.png' alt="person">
+        <div class="subscribe__info__text">
+          <h3>Donec nec justo eget</h3>
+          <p>“ Ede semper est, vitae luctus metus libero eu augue. Morb sipo ipiscing, commodo quis, gravida ...”<em> - Kohn Doe/company name</em></p>
+        </div>
+      </div>
+      <div class="subscribe__email">
+        <h3>Morbi vitae luctus</h3>
+        <input type="email" class="placeholder" placeholder="enter your email id here..." />
+        <button>SUNSCRIBE 🠪</button>
+      </div>
+    </section>
+    <section class="columns">
+      <section class="columns__1">
+        <h3>Aliquam tincidunt</h3>
+        <article>
+          <img src='img/mini__girl.png' alt="preview__icon">
+          <p>Donec nec justo eget felis facilisis fermentum.<br>Aliquam porttitor<br><a href="">more =></a></p>
+        </article>
+        <article>
+          <img src='img/mini__home.png' alt="preview__icon">
+          <p>Donec nec justo eget felis facilisis fermentum.<br>Aliquam porttitor<br><a href="">more =></a> </p>
+        </article>
+        <article>
+          <img src='img/mini__bird.png' alt="preview__icon">
+          <p>Donec nec justo eget felis facilisis fermentum.<br>Aliquam porttitor<br><a href="">more =></a></p>
+        </article>
+      </section>
+      <section class="columns__2">
+        <h3>Nunc dignissim risu</h3>
+        <div class="columns__2__container">
+          <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber</p>
+          <input class="placeholder" placeholder="name..."/>
+          <input  class="placeholder" placeholder="email..."  />
+          <textarea placeholder="your query..." ></textarea>
+          <button>SEND 🠪</button>
+        </div>
+      </section>
+      <section class="columns__3">
+        <h3>Aliquam tincidunt</h3>
+        <article>
+          <img src='img/home.png' alt="home">
+          <p><span>Address</span><br> some block, steet number, city name, country
+          </p>
+        </article>
+        <article>
+          <img src='img/phone.png' alt="phone">
+          <p><span>Phone</span><br> (000) 777 777 7777<br> (000) 888 888 8888</p>
+        </article>
+        <article>
+          <img src='img/email.png' alt="email">
+          <p><span>Email us</span><br> nfo@siteneme.com
+            <br> sales@sitename.com
+            <br> company@sitename.com
+          </p>
+        </article>
+      </section>
+    </section>
   </main>
-
+  <footer>
+    <div class="footer__container">
+<nav class="site__links">
+  <a href="">Home</a><p>/</p>
+  <a href="">About</a><p>/</p>
+  <a href="">Services</a><p>/</p>
+  <a href="">Portfolio</a><p>/</p>
+  <a href="">Contact </a>
+  <br>
+  <a href=""><span>Designed by: www.alltemplateneeds.com /</span> </a>
+</nav>
+<nav class="networks">
+  <a href="https://facebook.com/‎"><img src='img/icon__facebook.png' alt="facebook"></a>
+  <a href="https://twitter.com/"><img src='img/icon__twitter.png' alt="twitter"></a>
+  <a href="https://www.linkedin.com/"><img src='img/icon__in.png' alt="in"></a>
+</nav>
+</div>
+  </footer>
 </body>
 
 </html>
