@@ -10,6 +10,7 @@ a {
 body {
   font-family: 'Fjalla One', sans-serif;
   color: #3b4041;
+  overflow-x: hidden;
 }
 
 .main__container {
@@ -32,9 +33,14 @@ header {
   align-items: center;
 }
 
+.header__logo a:hover {
+  transform: scale(1.2);
+}
+
 .header__logo a {
   color: #e6e6e6;
   font-size: 22px;
+  transition: .3s ease-in-out;
 }
 
 .header__nav {
@@ -76,7 +82,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 560px;
+  min-height: 400px;
 }
 
 .banner__flex {
@@ -125,9 +131,8 @@ header {
 
 .advantages__item {
   display: flex;
-  width: 31.3%;
+  width: 33%;
   margin: 10px 0px;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -167,7 +172,7 @@ header {
 }
 
 .content__info {
-    margin: 25px 25px 25px 0px;
+  margin: 25px 0px;
 }
 
 .content__info h1 {
@@ -202,7 +207,8 @@ header {
 }
 
 .content__info section article {
-  width: 45%;
+  width: 50%;
+  padding-right: 20px;
 }
 
 button {
@@ -223,13 +229,13 @@ button {
   margin-top: 30px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
 }
 
 .subscribe {
   background-color: #e84c3d;
   border-radius: 10px;
-      padding: 30px 20px;
+  padding: 30px 20px;
+  box-sizing: border-box;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -249,14 +255,14 @@ button {
   display: flex;
   width: 50%;
 }
+
 .subscribe__testimonial img {
   align-self: center;
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
 }
 
 .subscribe__info__text {
   font-family: 'Comfortaa', cursive;
-  font-size: normal;
   align-self: center;
   margin: 10px 0px;
 }
@@ -273,15 +279,17 @@ button {
 }
 
 .subscribe__email {
-  font-size: 100;
   width: 50%;
 }
-.suscribe__email__input{
+
+.suscribe__email__input {
   display: flex;
 }
-.suscribe__email__input input{
+
+.suscribe__email__input input {
   flex: 1;
 }
+
 .placeholder {
   border: none;
   font-style: italic;
@@ -296,13 +304,17 @@ button {
   display: flex;
   justify-content: space-between;
   margin: 60px auto;
-  max-width: 1920px;
   max-width: 1170px;
+  box-sizing: border-box;
 }
 
 .columns section {
   width: 33%;
-  padding: 15px;
+  margin-right: 30px;
+}
+
+.columns section:last-child {
+  margin-right: 0px;
 }
 
 .columns__1 article {
@@ -314,7 +326,7 @@ button {
 
 .columns__1 article img {
   align-self: center;
-  margin-right: 5%;
+  margin-right: 20px;
 }
 
 .columns__1 article p {
@@ -330,8 +342,10 @@ button {
 
 .columns__2__container {
   background-color: #e7e7e7;
-  padding: 20px;
+  padding: 30px;
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .columns__2__container p {
@@ -344,13 +358,11 @@ button {
 .columns__2__container input {
   padding: 10px 0px 10px 10px;
   margin: 10px 0px;
-  width: 90%;
   outline: none;
 }
 
 .columns__2__container textarea {
   margin: 10px 0px;
-  width: 90%;
   border: 0px;
   border-radius: 10px;
   height: 100px;
@@ -359,6 +371,21 @@ button {
   color: #9faaad;
   outline: none;
 }
+
+.columns__2__container button {
+  align-self: flex-start;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: transform;
+  transition-property: transform
+}
+
+.columns__2__container button: hover {}
 
 .columns__3 article {
   display: flex;
@@ -399,7 +426,9 @@ footer {
 }
 
 .site__links {
-  align-self: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
 .site__links a {
@@ -418,6 +447,10 @@ footer {
   color: #e84c3d;
 }
 
+.f {
+  display: flex;
+}
+
 .site__links p {
   margin: 0px 10px;
   display: inline;
@@ -430,36 +463,34 @@ footer .networks a {
 }
 
 @media screen and (max-width: 1300px) {
-.header__logo{
-    margin-left: 30px;
+  .header__logo {
+    margin-left: 20px;
   }
-  .banner__flex {
-      padding-right: 350px;
-    }
-
   .content__info article {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
   .header__nav {
     text-align: center;
   }
+  .banner {
+    padding-left: 20px;
+  }
   .banner__flex {
-    padding-right: 200px;
+    margin: 0px;
+    padding-right: 100px;
   }
   .banner__container {
     min-height: 400px;
   }
   .advantages__container {
-    padding: 0px 20px;
+    padding: 10px 20px;
   }
-  .content {
-    margin-top: 25px;
-  }
+  
   .content__container {
-    margin: 25px 20px;
+    margin: 0px 20px;
   }
   .content__info section {
     display: flex;
@@ -471,8 +502,11 @@ footer .networks a {
   .content__img img {
     width: 250px;
   }
+  .columns {
+    padding: 0px 20px;
+  }
   .footer__container {
-    justify-content: space-around;
+    padding: 50px 20px;
   }
 }
 
@@ -485,52 +519,66 @@ footer .networks a {
     padding-right: 0px;
     min-height: 300px;
   }
-  .banner__flex {
-    padding-right: 0px;
-    padding-left: 40px;
-    padding-bottom: 30px;
-  }
-  .banner__line{
+  .banner__line {
     display: none;
   }
   .advantages {
-    padding: 20px 10px;
+    padding: 20px 20px;
+    justify-content: flex-start;
+    padding: 0px;
   }
   .advantages__container {
     flex-direction: column;
   }
   .advantages__item {
     width: 100%;
-    padding: 0px 20px;
+    padding-left: 0px;
     justify-content: flex-start;
-}
+  }
   .content__img {
     display: none;
+  }
+  .content__info section article {
+    padding-right: 0px;
   }
   .subscribe {
     flex-direction: column;
   }
-  .subscribe__email,
-  .subscribe__testimonial {
+  .subscribe__email, .subscribe__testimonial {
     width: 100%;
     padding-bottom: 15px;
   }
   .subscribe__email__input {
     width: 100%;
   }
-
   .columns {
     flex-direction: column;
+    padding: 0px;
   }
   .columns section {
     width: 100%;
     margin-bottom: 30px;
+  }
+  .columns__2__container {
+    padding: 30px 20px;
+  }
+  .columns__1 h3, .columns__2 h3, .columns__3 h3 {
+    padding-left: 20px;
+  }
+  .columns__1 article, .columns__3 article {
+    padding-left: 20px;
   }
 }
 
 @media screen and (max-width: 780px) {
   .content__img img {
     display: none;
+  }
+  .content__info section {
+    flex-direction: column;
+  }
+  .content__info section article {
+    margin-right: 0px;
   }
 }
 
@@ -540,12 +588,18 @@ footer .networks a {
   }
   .hamburger__icon {
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .header__logo {
     height: 80px;
   }
-  .advantages__item{
+  .banner__container {
+    justify-content: center;
+  }
+  .banner__flex {
+    padding-bottom: 0px;
+  }
+  .advantages__item {
     padding: 0px;
   }
   .footer__container {
@@ -557,37 +611,23 @@ footer .networks a {
 }
 
 @media screen and (max-width: 535px) {
-  .banner__slider {
-    display: none;
-  }
-  .advantages__container {
+  .advantages__container, .advantages__item {
     width: 100%;
-  }
-  .advantages__item {
-    width: 100%;
-  }
-  .advantages__item__icon {
-    /* width: 10%; */
-    /* margin-left: 5px; */
-  }
-  .subscribe {
-    border-radius: 0px;
   }
   .subscribe__testimonial {
     width: 100%;
     justify-content: center;
-    padding: 15px;
   }
   .subscribe__testimonial__text {
     width: 100%;
   }
-  .subscribe__testimonial img {
-    padding: 1em;
-  }
   .suscribe__email__input {
     flex-direction: column;
   }
-  .suscribe__email__input button{
+  .suscribe__email__input button {
     margin-top: 15px;
+  }
+  .subscribe__email .placeholder {
+    margin-right: 0px;
   }
 }
