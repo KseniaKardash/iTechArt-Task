@@ -1,0 +1,185 @@
+@media screen and (max-width: 1300px) {
+  .content-info-article {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-nav {
+    text-align: center;
+  }
+
+  .banner-flex {
+    margin: 0;
+    padding-right: 60px;
+  }
+
+  .banner-container {
+    min-height: 400px;
+  }
+
+  .content-info section {
+    display: flex;
+  }
+
+  .content-info-article {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .content-img img {
+    width: 250px;
+  }
+
+  .columns {
+    padding: 0 20px;
+  }
+
+  .footer-container {
+     padding-top: 50px;
+     padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .header-nav a:hover {
+    background-color: #272b2c;
+    color: #ca4d40;
+  }
+
+  .banner-container {
+    padding-right: 0;
+    min-height: 300px;
+  }
+
+  .banner-line {
+    display: none;
+  }
+
+  .advantages {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .advantages-container {
+    flex-direction: column;
+  }
+
+  .advantages-item {
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .content-img {
+    display: none;
+  }
+
+  .content-info-article {
+    padding-right: 0;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe-email,
+  .subscribe-testimonial {
+    padding-bottom: 15px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .subscribe-email-input {
+    width: 100%;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .columns section {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .columns-2-container {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .content-img img {
+    display: none;
+  }
+
+  .content-info section {
+    flex-direction: column;
+  }
+
+  .content-info-article {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: flex;
+  }
+
+  .header-logo {
+    height: 80px;
+  }
+
+  .banner-container {
+    justify-content: center;
+  }
+
+  .banner-flex {
+    padding-bottom: 0;
+  }
+
+  .advantages-item {
+    padding: 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .networks {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .advantages-container,
+  .advantages-item {
+    width: 100%;
+  }
+
+  .subscribe-testimonial {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .subscribe-testimonial-text {
+    width: 100%;
+  }
+
+  .suscribe-email-input {
+    flex-direction: column;
+  }
+
+  .suscribe-email-input button {
+    margin-top: 15px;
+  }
+  
+  .subscribe-email .placeholder {
+    margin-right: 0;
+  }
+}

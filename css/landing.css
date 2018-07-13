@@ -1,15 +1,14 @@
 
-/* common settings */
+/* general settings */
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
-
 
 body {
   overflow-x: hidden;
@@ -19,8 +18,8 @@ body {
 
 .main-container {
   max-width: 1170px;
-  padding: 0px 20px;
   box-sizing: border-box;
+  padding: 0 20px;
 }
 
 /* header(row 1) */
@@ -125,7 +124,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 0px;
+  padding: 70px 0;
   margin: auto;
   background-color: #e7e7e7;
 }
@@ -140,12 +139,12 @@ header {
   display: flex;
   align-items: center;
   width: 31%;
-  margin: 20px 0px;
+  margin: 20px 0;
   margin-right: 10px;
 }
 
 .advantages-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .advantages-item-icon {
@@ -153,19 +152,15 @@ header {
   margin-right: 25px;
 }
 
-.advantages-item-text h3 {
-  margin-bottom: 17px;
-  color: #3b4041;
-}
-
 .advantages-item-text p {
+  margin-top: 17px;
   color: #888d8f;
   font-family: 'Comfortaa', cursive;
   font-size: 13px;
   line-height: 25px;
 }
 
-.advantages-item-text p a {
+.more {
   color: #ca4d40;
 }
 
@@ -182,11 +177,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px 0px;
+  margin: 25px 0;
 }
 
 .content-info {
-  margin: 25px 0px;
+  margin: 25px 0;
 }
 
 .content-info h1 {
@@ -198,7 +193,7 @@ header {
 }
 
 .content-info h2 {
-  padding: 10px 0px;
+  padding: 10px 0;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   color: #ca4d40;
@@ -212,7 +207,12 @@ header {
   font-size: 15px;
 }
 
-.content-info section p {
+.content-info-article {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.content-info-article p {
   margin-top: 15px;
   color: #888d8f;
   font-family: 'Comfortaa', cursive;
@@ -220,19 +220,14 @@ header {
   line-height: 25px;
 }
 
-.content-info section article {
-  width: 50%;
-  padding-right: 20px;
-}
-
 button {
   padding: 10px 20px;
   margin-top: 30px;
-  border: none;
+  border: 0;
   border-radius: 50px;
   outline: none;
   background-color: #e84c3d;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Fjalla One', sans-serif;
   font-size: 18px;
   text-align: center;
@@ -274,15 +269,12 @@ button {
 
 .subscribe-testimonial img {
   align-self: center;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 0px;
+  padding: 10px 10px 10px 0;
 }
 
 .subscribe-info-text {
   align-self: center;
-  margin: 10px 0px;
+  margin: 10px 0;
   font-family: 'Comfortaa', cursive;
 }
 
@@ -291,15 +283,15 @@ button {
   line-height: 25px;
 }
 
-.subscribe-email button {
-  margin-top: 0px;
-  background-color: #202628;
-  color: #fceceb;
-}
-
 .subscribe-email {
   width: 50%;
   margin-left: 20px;
+}
+
+.subscribe-email button {
+  margin-top: 0;
+  background-color: #202628;
+  color: #fceceb;
 }
 
 .suscribe-email-input {
@@ -313,7 +305,7 @@ button {
 .placeholder {
   padding: 12px 20px;
   margin-right: 10px;
-  border: none;
+  border: 0;
   border-radius: 50px;
   color: #9faaad;
   font-style: italic;
@@ -335,30 +327,26 @@ button {
 }
 
 .columns section:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
-.columns-1 article {
+.columns-1-article {
   display: flex;
   margin-top: 25px;
   padding-top: 25px;
   border-top: 1px solid #e7e7e7;
 }
 
-.columns-1 article img {
+.columns-1-article img {
   align-self: center;
   margin-right: 20px;
 }
 
-.columns-1 article p {
+.columns-1-article p {
   color: #888d8f;
   font-family: 'Comfortaa', cursive;
   font-size: 13px;
   line-height: 25px;
-}
-
-.columns-1 article p a {
-  color: #e84c3d;
 }
 
 .columns-2-container {
@@ -377,22 +365,16 @@ button {
 }
 
 .columns-2-container input {
-  padding-top: 10px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  margin: 10px 0px;
+  padding: 10px 0 10px 10px;
+  margin: 10px 0;
   outline: none;
 }
 
 .columns-2-container textarea {
   height: 100px;
-  padding-top: 10px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  margin: 10px 0px;
-  border: 0px;
+  padding: 10px 0 10px 10px;
+  margin: 10px 0;
+  border: 0;
   border-radius: 10px;
   font-style: italic;
   color: #9faaad;
@@ -403,26 +385,26 @@ button {
   align-self: flex-start;
 }
 
-.columns-3 article {
+.columns-3-article {
   display: flex;
   margin-top: 25px;
   padding-top: 25px;
   border-top: 1px solid #e7e7e7;
 }
 
-.columns-3 article img {
+.columns-3-article img {
   align-self: flex-start;
   margin-right: 20px;
 }
 
-.columns-3 article p {
+.columns-3-article p {
   font-family: 'Comfortaa', cursive;
   font-size: 13px;
   color: #888d8f;
   line-height: 25px;
 }
 
-.columns-3 article p span {
+.columns-3-article span {
   font-size: 15px;
   font-weight: bold;
   color: #e84c3d;
@@ -458,172 +440,13 @@ footer {
   line-height: 30px;
 }
 
-.site-links a span {
-  margin-top: 15px;
-  font-family: 'Comfortaa', cursive;
-  font-size: 12px;
-  color: #e84c3d;
-}
-
 .site-links p {
   display: inline;
-  margin: 0px 10px;
+  margin: 0 10px;
   color: #767c7e;
   font-style: italic;
 }
 
-footer .networks a {
+.networks a {
   margin-left: 7px;
-}
-
-@media screen and (max-width: 1300px) {
-
-  .content-info article {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .header-nav {
-    text-align: center;
-  }
-  .banner-flex {
-    margin: 0px;
-    padding-right: 60px;
-  }
-  .banner-container {
-    min-height: 400px;
-  }
-  .content-info section {
-    display: flex;
-  }
-  .content-info section article {
-    width: 100%;
-    margin-right: 20px;
-  }
-  .content-img img {
-    width: 250px;
-  }
-  .columns {
-    padding: 0px 20px;
-  }
-  .footer-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .header-nav a:hover {
-    background-color: #272b2c;
-    color: #ca4d40;
-  }
-  .banner-container {
-    padding-right: 0px;
-    min-height: 300px;
-  }
-  .banner-line {
-    display: none;
-  }
-  .advantages {
-    justify-content: flex-start;
-    padding: 0px;
-  }
-  .advantages-container {
-    flex-direction: column;
-  }
-  .advantages-item {
-    justify-content: flex-start;
-    width: 100%;
-    padding-left: 0px;
-  }
-  .content-img {
-    display: none;
-  }
-  .content-info section article {
-    padding-right: 0px;
-  }
-  .subscribe {
-    flex-direction: column;
-  }
-  .subscribe-email, .subscribe-testimonial {
-    padding-bottom: 15px;
-    margin: 0px;
-    width: 100%;
-  }
-  .subscribe-email-input {
-    width: 100%;
-  }
-  .columns {
-    flex-direction: column;
-  }
-  .columns section {
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .columns-2-container {
-    padding: 30px 20px;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .content-img img {
-    display: none;
-  }
-  .content-info section {
-    flex-direction: column;
-  }
-  .content-info section article {
-    margin-right: 0px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .header-nav {
-    display: none;
-  }
-  .hamburger-icon {
-    display: flex;
-  }
-  .header-logo {
-    height: 80px;
-  }
-  .banner-container {
-    justify-content: center;
-  }
-  .banner-flex {
-    padding-bottom: 0px;
-  }
-  .advantages-item {
-    padding: 0px;
-  }
-  .footer-container {
-    flex-direction: column;
-  }
-  footer .networks {
-    margin: 20px auto;
-  }
-}
-
-@media screen and (max-width: 535px) {
-  .advantages-container,
-  .advantages-item {
-    width: 100%;
-  }
-  .subscribe-testimonial {
-    justify-content: center;
-    width: 100%;
-  }
-  .subscribe-testimonial-text {
-    width: 100%;
-  }
-  .suscribe-email-input {
-    flex-direction: column;
-  }
-  .suscribe-email-input button {
-    margin-top: 15px;
-  }
-  .subscribe-email .placeholder {
-    margin-right: 0px;
-  }
 }
