@@ -288,6 +288,19 @@ button {
   margin-left: 20px;
 }
 
+#wrong-email,
+#wrong-name{
+  display: none;
+  color: #e66255;
+}
+
+#form-email:focus,
+#form-name:focus,
+#form-query:focus {
+  border: 1px solid #e66255;
+  color: #202628;
+}
+
 .subscribe-email button {
   margin-top: 0;
   background-color: #202628;
@@ -350,11 +363,14 @@ button {
 }
 
 .columns-2-container {
-  display: flex;
-  flex-direction: column;
   padding: 30px;
   margin-top: 25px;
   background-color: #e7e7e7;
+}
+
+.columns-2-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .columns-2-container p {

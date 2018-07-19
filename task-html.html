@@ -132,10 +132,14 @@ sit amet orci. Aenean dignissim pellentesque felis</h1>
         <h3>Nunc dignissim risu</h3>
         <div class="columns-2-container">
           <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber</p>
-          <input class="placeholder" placeholder="name..." />
-          <input class="placeholder" placeholder="email..." />
-          <textarea placeholder="your query..."></textarea>
-          <button>SEND 🠪</button>
+          <form class="columns-2-form">
+           <input class="placeholder" id="form-name" placeholder="name..." name="name"/>
+           <p id="wrong-name">Please, enter your name</p>
+          <input class="placeholder" id="form-email" placeholder="email..." name="email" />
+          <p id="wrong-email">Please, enter valid email</p>
+          <textarea id="form-query" placeholder="your query..." name="query"></textarea>
+          <button id="form-button" type="submit">SEND 🠪</button>
+        </form>
         </div>
       </section>
       <section class="columns-3">
@@ -179,6 +183,7 @@ sit amet orci. Aenean dignissim pellentesque felis</h1>
       </nav>
     </div>
   </footer>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
