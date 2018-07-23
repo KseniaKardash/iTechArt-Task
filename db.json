@@ -1,107 +1,52 @@
 {
   "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "title": "All about fetch",
-      "body": "fvdfvfdv",
-      "id": 2
-    },
-    {
-      "title": "All about fetch",
-      "body": "fvdfvfdv",
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "query": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "email": "",
-      "query": "",
-      "id": 5
-    },
+
     {
       "name": "dkardash@tut.by",
       "email": "dkardash@tut.by",
       "query": "huhu",
-      "id": 6
+      "id": 1
     },
     {
       "name": "hhub",
       "email": "dkardash@tut.by",
       "query": "xuhud",
-      "id": 7
+      "id": 2
     },
     {
       "name": "dkardash@tut.by",
       "email": "dkardash@tut.by",
       "query": "du",
-      "id": 8
+      "id": 3
     },
     {
       "name": "re",
       "email": "just.kardash@gmail.com",
       "query": "vi ",
-      "id": 9
+      "id": 4
     },
     {
       "name": "xi x0 icdcd",
       "email": "dkardash@tut.by",
       "query": "",
-      "id": 10
+      "id": 5
     },
     {
       "name": "xi x0 icdcd",
       "email": "dkardash@tut.by",
       "query": "",
-      "id": 11
+      "id": 6
     },
     {
       "name": "vfvfv",
       "email": "dkardash@tut.by",
       "query": "vf",
-      "id": 12
+      "id": 7
     },
     {
       "name": "c",
       "email": "just.kardash@gmail.com",
       "query": "c",
-      "id": 13
-    },
-    {
-      "name": "fvf",
-      "email": "dkardash@tut.by",
-      "query": "fv",
-      "id": 14
-    },
-    {
-      "name": "fvdfvf",
-      "email": "dkardash@tut.by",
-      "query": "",
-      "id": 15
-    },
-    {
-      "name": "hd",
-      "email": "dkardash@tut.by",
-      "query": "",
-      "id": 16
+      "id": 8
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
 }

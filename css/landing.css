@@ -1,4 +1,3 @@
-
 /* general settings */
 
 * {
@@ -343,11 +342,23 @@ button {
   margin-right: 0;
 }
 
+.columns-1-scroll{
+  overflow: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height: 460px;
+}
 .columns-1-article {
   display: flex;
   margin-top: 25px;
   padding-top: 25px;
   border-top: 1px solid #e7e7e7;
+}
+.columns-1-article:first-child {
+  margin-top: 0;
+}
+.columns-1 h3 {
+margin-bottom: 25px;
 }
 
 .columns-1-article img {
@@ -391,6 +402,7 @@ button {
   padding: 10px 0 10px 10px;
   margin: 10px 0;
   border: 0;
+  resize: none;
   border-radius: 10px;
   font-style: italic;
   color: #9faaad;
