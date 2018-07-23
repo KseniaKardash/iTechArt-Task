@@ -73,6 +73,7 @@ formEmail.onkeyup = function(e) {
   validateEmail(formEmail) ? isCorrect(wrongEmail) : isWrong(wrongEmail);
 }
 
+
 formButton.onclick = function(e) {
   e.preventDefault();
 
